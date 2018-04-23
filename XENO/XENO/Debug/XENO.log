@@ -1,2 +1,3 @@
-﻿  stdafx.cpp
-  XENO.cpp
+﻿  XENO.cpp
+c:\users\verbm\source\repos\xeno\xeno\xeno\xeno.cpp(783): warning C4101: check_win: неиспользованная локальная переменная
+  XENO.vcxproj -> C:\Users\verbm\source\repos\XENO\XENO\Debug\XENO.exe

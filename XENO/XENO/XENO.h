@@ -189,11 +189,12 @@ public:
 		probe_taken = false;
 	}
 
-	void infect()
+	void infect(int day)
 	{
+		if (day == 1) return;
 		if (!p_infected) return;	//Если инфецированных нет, не инфецировать
 		int ph = p_amount - p_infected;	//Сколько здоровых
-		int r = rand() % active_symptom.infect - infect_break - (quarantine) ? QRTBREAK : 0; //Процент новых инфецированных, если карантин, то -10% 
+		int r = (rand() % active_symptom.infect) - infect_break - ((quarantine) ? QRTBREAK : 0); //Процент новых инфецированных, если карантин, то -10% 
 		if (r < 0) r = 0;
 		int pi = (int)(ph * (float)r / 100);
 		p_infected += pi;

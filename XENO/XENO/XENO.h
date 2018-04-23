@@ -78,6 +78,7 @@ class twn
 private:
 	const int CHANCE = 30;
 	const int INC_DEADTH_COMBO = 1;
+	const int QRTBREAK = 10; //Карантин
 	int death_combo = 0; //Каждый день со смертельным исходом будет добавлять 1% к смертности.
 	int infect_break = 0;
 
@@ -190,9 +191,9 @@ public:
 
 	void infect()
 	{
-		if (!p_infected) return;
-		int ph = p_amount - p_infected;
-		int r = rand() % active_symptom.infect - infect_break;
+		if (!p_infected) return;	//Если инфецированных нет, не инфецировать
+		int ph = p_amount - p_infected;	//Сколько здоровых
+		int r = rand() % active_symptom.infect - infect_break - (quarantine) ? QRTBREAK : 0; //Процент новых инфецированных, если карантин, то -10% 
 		if (r < 0) r = 0;
 		int pi = (int)(ph * (float)r / 100);
 		p_infected += pi;
@@ -238,7 +239,8 @@ public:
 		infect_break = slowdown;
 		if (heal_precent != 0)
 		{
-			int r = rand() % heal_precent + 1;
+			int r = rand() % heal_precent; 
+			r += 5; //Не менее 5% эффективность
 			int p_healed = (int)(p_infected * (float)r / 100);
 			if (heal_precent < 0) { p_infected += p_healed; }
 			else p_infected -= p_healed;

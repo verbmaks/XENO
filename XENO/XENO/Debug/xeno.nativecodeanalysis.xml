@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\verbm\source\repos\xeno\xeno\xeno\</FILEPATH>
+      <FILENAME>xeno.h</FILENAME>
+      <LINE>196</LINE>
+      <COLUMN>56</COLUMN>
+    </SFA>
+    <DEFECTCODE>6336</DEFECTCODE>
+    <DESCRIPTION>Арифметический оператор имеет более высокий приоритет, чем оператор вопроса, используйте скобки для уточнения порядка операций.</DESCRIPTION>
+    <FUNCTION>twn::infect</FUNCTION>
+    <DECORATED>?infect@twn@@QAEXXZ</DECORATED>
+    <FUNCLINE>192</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\verbm\source\repos\xeno\xeno\xeno\</FILEPATH>
+      <FILENAME>xeno.cpp</FILENAME>
+      <LINE>245</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Локальное объявление "i" скрывает объявление того же имени во внешней области. Дополнительные сведения см. в предыдущем объявлении в строке "192" файла "c:\users\verbm\source\repos\xeno\xeno\xeno\xeno.cpp".</DESCRIPTION>
+    <FUNCTION>input</FUNCTION>
+    <DECORATED>?input@@YAHXZ</DECORATED>
+    <FUNCLINE>189</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\verbm\source\repos\xeno\xeno\xeno\</FILEPATH>
+        <FILENAME>xeno.cpp</FILENAME>
+        <LINE>192</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\verbm\source\repos\xeno\xeno\xeno\</FILEPATH>
+      <FILENAME>xeno.cpp</FILENAME>
+      <LINE>302</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Локальное объявление "i" скрывает объявление того же имени во внешней области. Дополнительные сведения см. в предыдущем объявлении в строке "281" файла "c:\users\verbm\source\repos\xeno\xeno\xeno\xeno.cpp".</DESCRIPTION>
+    <FUNCTION>use_drug</FUNCTION>
+    <DECORATED>?use_drug@@YAXH@Z</DECORATED>
+    <FUNCLINE>279</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\verbm\source\repos\xeno\xeno\xeno\</FILEPATH>
+        <FILENAME>xeno.cpp</FILENAME>
+        <LINE>281</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\verbm\source\repos\xeno\xeno\xeno\</FILEPATH>
+      <FILENAME>xeno.cpp</FILENAME>
+      <LINE>311</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Локальное объявление "i" скрывает объявление того же имени во внешней области. Дополнительные сведения см. в предыдущем объявлении в строке "281" файла "c:\users\verbm\source\repos\xeno\xeno\xeno\xeno.cpp".</DESCRIPTION>
+    <FUNCTION>use_drug</FUNCTION>
+    <DECORATED>?use_drug@@YAXH@Z</DECORATED>
+    <FUNCLINE>279</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\verbm\source\repos\xeno\xeno\xeno\</FILEPATH>
+        <FILENAME>xeno.cpp</FILENAME>
+        <LINE>281</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>
